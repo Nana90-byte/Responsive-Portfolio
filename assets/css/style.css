@@ -28,114 +28,31 @@
     background-color: #ffffff;
     border-color: #dddddd;
     width: 960px;
-    height: 600px;
+    height: 100%;
     border: 30px;
     padding: 50px;
-    margin: 100px;
-    margin-top: 50px; 
-    margin-left: 160px;
     position: relative;
     top: 75px;
 }
-#hangman {
-    background-color: #4aaaa5;
-    width: 200px;
-    height: 40px;
-    color: #ffffff;
-    text-align: center;
-    line-height: 40px;
-    position: relative;
-    top: 90px;
-    right:40px;
-    z-index: 2;
+.pic-text {
+    
+        background-color: #4aaaa5;
+        width: 200px;
+        height: 40px;
+        color: #ffffff;
+        text-align: center;
+        line-height: 40px;
+        position: absolute;
+        bottom: 20px;
+        z-index: 2;
+    }
+    
+
+.foto-container {
+position: relative; 
+display: inline-block;
+
 }
-#img1 {
-    width: 200px;
-    height: 140px;
-    position: relative; 
-    bottom: 50px;
-    right: 40px;
-    z-index: 1;
-}
-#rpggame {
-    background-color: #4aaaa5;
-    width: 200px;
-    height: 40px;
-    color: #ffffff;
-    text-align: center;
-    line-height: 40px;
-    position: relative;
-    right: 515px;
-    top: 50px;
-    z-index: 2;
-    float: right;
-}
-#img2 {
-    width: 200px;
-    height: 140px;
-    position: relative;
-    bottom: 50px; 
-    right: 5px;
-    z-index: 1;   
-}
-#img3 {
-    width: 200px;
-    height: 140px;
-    position: relative;
-    top: 120px;
-    right: 460px;
-    z-index: 1;
-}
-#triviagame {
-    background-color: #4aaaa5;
-    width: 200px;
-    height: 40px;
-    color: #ffffff;
-    text-align: center;
-    line-height: 40px;
-    position: absolute;
-    left: 50px;
-    top: 410px;
-    z-index: 3;  
-}
-#rudgers {
-    background-color: #4aaaa5;
-    width: 200px;
-    height: 40px;
-    color: #ffffff;
-    text-align: center;
-    line-height: 40px;
-    position: absolute;
-    top: 410px;
-    left: 290px;
-    z-index: 2;
-}
-#img4 {
-    width: 200px;
-    height: 140px;
-    position: absolute;
-    top: 307px;
-    left: 290px;
-}
-#rps {
-    background-color: #4aaaa5;
-    width: 200px;
-    height: 40px;
-    color: #ffffff;
-    text-align: center;
-    line-height: 40px; 
-    position: absolute;
-    top: 580px;
-    left: 50px;
-    z-index: 2;
-}
-#img5 {
-    width: 200px;
-    height: 140px;
-    position: absolute;
-    top: 480px;  
-    left: 50px;
-}   
 ul {
     list-style-type: none;
 }
@@ -153,21 +70,16 @@ header {
     width: 960px; 
     border: 30px; 
     padding: 50px; 
-    margin: 100px; 
-    margin-top: 50px; 
-    margin-left: 160px;
     position: relative;
     top: 75px;
+    
 }
 .contact-box {
     background-color: #ffffff; 
     border-color: #dddddd; 
-    width: 960px; 
+    width: 960px;
     border: 30px; 
-    padding: 50px; 
-    margin: 100px;
-    margin-top: 50px; 
-    margin-left: 160px; 
+    padding: 50px;  
     position: relative;
     top: 75px;
 }
@@ -198,7 +110,7 @@ p {
 h1, nav {
     font-family: Georgia, 'Times New Roman', Times, serif
 }
-img {
+#my-pic {
     width: 200px; 
     float: left; 
     margin-right: 10px; 
@@ -234,10 +146,20 @@ footer {
  .box {
      position: static; width: 100%; text-align: center
  }
+ #portfolio-tittle {
+     text-align: center;
+ }
+ #contact-tittle {
+     text-align: center;
+ }
+ #about-me-tittle {
+     text-align: center;
+ }
  #teal-background {
     position: fixed; 
     margin-top: 0;
-    margin-left: 35px;
+    margin-left: 0px;
+    width: 100%;
     z-index: 2;
  }
  header {
@@ -246,9 +168,9 @@ footer {
  nav {
      position: static; 
      margin-top: 80px;
-     margin-right: 40px;
+     margin-right: 5px;
      background-color: #ffffff; 
-     width: 80%; height: 50px;
+     width: 100%; height: 50px;
      line-height: 50px;
      text-align: center;  
  }
@@ -256,27 +178,48 @@ footer {
  
 .About-me-box {
     margin-top: 100px;
-    margin-left: 30px;
+    margin-left: 50px;
     margin-bottom: 150px;
     width: 60%;
 }
+.contact-box {
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-bottom: 150px;
+    width: 60%;
+}
+.portfolio-box {
+margin-top: 100px;
+margin-left: 50px;
+margin-bottom: 150px;
+width: 60%;
+}
+#name-box, #email-box, #message-box {
+    width: 90%
+}
+
+.foto {
+    width: 200px;
+    height: 200px;
+}
+    
+
 p {
     overflow-wrap:break-word;
     word-wrap:break-word;
 }
-img {
-    width: 100%;
-}
+
 
 @media screen and (min-width: 641px) and (max-width:768px) {
 
     .box {
         position: static; width: 100%; text-align: center
     }
+    
     #teal-background {
-        position: fixed; 
+        position: absolute; 
         margin-top: 0;
-        margin-left: 35px;
+        margin-right: 35px;
         z-index: 2;
      }
      header {
@@ -298,14 +241,25 @@ img {
        margin-top: 100px;
        margin-left: 30px;
        margin-bottom: 150px;
-       width: 60%;
+       width: 80%;
    }
-   p {
 
-       overflow-wrap:break-word;
-       word-wrap:break-word;
+   p {
+    
+    font-size: 18px;  
    }
-   img {
-       width: 100%;
+   #my-pic {
+       width: 50%;
    }
+}
+
+@media screen and (min-width: 769px) and (max-width:980px) {
+    .About-me-box {
+        width: 800px;
+        margin-left: 40px;
+    }
+   
+    #my-pic {
+        width: 200px;
+    }
 }
